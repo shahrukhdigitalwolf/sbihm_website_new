@@ -43,6 +43,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Wow Animation Js -->
     <script src="./assets/js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.green.css" />
   </head>
   <body>
     <section class="header-area header-three">
@@ -370,11 +373,91 @@
       </div>
     </section> -->
 
-    <section>
+    <section class="home-testimonials">
         <div class="container">
-
+          <div class="text-center mb-4">
+            <h6><i class="fas fa-graduation-cap"></i> Testimonial</h6>
+            <h1>Our Students Placement</h1>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-1.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-2.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-3.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-4.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-5.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-6.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-7.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-8.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-9.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-10.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-11.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-12.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-13.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-14.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials_card" style="width: 95%">
+                <img src="./assets/img/testimonials/alumni-15.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <footer class="footer">
       <div class="container">
@@ -560,6 +643,39 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            nav:true,
+            autoplay:true,
+            rtl:true,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },            
+                960:{
+                    items:5
+                },
+                1200:{
+                    items:6
+                }
+            }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
   </body>
 </html>
