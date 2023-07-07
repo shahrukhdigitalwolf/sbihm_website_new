@@ -44,8 +44,56 @@
     <!-- Wow Animation Js -->
     <script src="./assets/js/wow.min.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.green.css" />
+    <style>
+      .marquee {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+  overflow: hidden;
+}
+.organization img{
+  width: 150px;
+}
+.marquee.initialized .marquee__group {
+  animation: scroll 30s linear infinite;
+}
+@media only screen and (max-width: 800px) {
+  .marquee.initialized .marquee__group {
+  animation: scroll 5s linear infinite;
+}
+.organization img{
+  width: 90px;
+}
+}
+.marquee .marquee__group {
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Marquee Reversed */
+.marquee--reversed.initialized .marquee__group {
+  animation-direction: reverse;
+}
+
+/* Marquee Pause Hover */
+.marquee--pause-hover.initialized:hover .marquee__group {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 10px));
+  }
+}
+    </style>
   </head>
   <body>
     <section class="header-area header-three">
@@ -373,90 +421,128 @@
       </div>
     </section> -->
 
-    <section class="home-testimonials">
-        <div class="container">
-          <div class="text-center mb-4">
-            <h6><i class="fas fa-graduation-cap"></i> Testimonial</h6>
-            <h1>Our Students Placement</h1>
-          </div>
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-1.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-2.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-3.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-4.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-5.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-6.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-7.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-8.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-9.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-10.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-11.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-12.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-13.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-14.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 95%">
-                <img src="./assets/img/testimonials/alumni-15.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="mt-3 mb-3 organization">
+      
+<hr>
+<div class="marquee marquee--pause-hover js-marquee">
+    <div class="marquee__group">
+      <img class="img-fluid" src="./assets/img/destination/Adelaaide_Australia.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Aditya_Birla_Group.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/AIIMS.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Air-India-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/allahabad-bank-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Apollo_Hospitals_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Axis_Bank_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/bajajElectricals.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Bank-of-Baroda-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/BCH.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Capgemini-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/carnival-cruise-vector-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Cidade_Goa.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Coal_India_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Costa_Cruises_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Emirates-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Fairmont_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Farefield_by_Marriott.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Ford-Motor-Company-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Four_Seasons_logo.jpg" alt="">
+    </div>
+</div>
+<hr>
+<div class="marquee marquee--pause-hover js-marquee">
+    <div class="marquee__group">
+      <img class="img-fluid" src="./assets/img/destination/Galaxy_Mart.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/GE_Capital.svg.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/goair-vector-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/grand-hyatt-vector-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/HDFC-LOGO.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/HiltonHotelsLogo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/HSBC-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/holiday-inn-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Honda_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/HT-Media-Group-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/IBM_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/IC-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/india-today-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/indigo_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/itc-maratha-mumbai-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/itchotel.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Jaypee_Cement.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/jw-marriott-hotel-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Kapsons_logo_design.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Kokilaben.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Kolkata.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/la-quinta.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/leela_goa.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Le_Parc_France.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/LeMeridien.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/LIC-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Max_Life_Insurance_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/medica_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Medanta-The-Medicity.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Metro_Hospital.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/nanavati2.jpg" alt="">
+    </div>
+</div>
+
+<hr>
+
+<div class="marquee marquee--reversed marquee--pause-hover js-marquee">
+    <div class="marquee__group">
+      <img class="img-fluid" src="./assets/img/destination/National_Heart_Institute.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Nestle-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Novotel-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/NuaOdisha.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Omega_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/p-o-cruises-2-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/pcovmxhh-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/pnb-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Park_Hyatt_Goa.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Peerless-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Qatar-Airways-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/retreat_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Radisson-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Radisson_Blu_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Ramada_Hotels_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/RCL_BIG.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Reebok-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/RELIGARE_NS_BIG.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Rotana.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/sheraton.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/swissotel-hotels-resorts.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Samsung_Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/SBI-Logo-1970.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Shapoorji_Pallonji.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Simplifly_Deccan_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/SpiceJet-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/ongc.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Star_cruises_logo.jpg" alt="">
+    </div>
+</div>
+
+<hr>
+
+<div class="marquee marquee--pause-hover js-marquee">
+    <div class="marquee__group">
+     
+    
+      <img class="img-fluid" src="./assets/img/destination/taj-transparent-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/tata-steel-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/The_Lalit.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/The_Leela.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/The_Orchid.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/The_Park_Hotels.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Thomas_Cook.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/TOI_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Vivanta.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Vodafone-Logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/woodland-logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Westin_Hotels_&_Resorts_logo.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/yatra.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/zuri-logo-main.jpg" alt="">
+      <img class="img-fluid" src="./assets/img/destination/Zee_Network_logo.jpg" alt="">
+    </div>
+</div>
       </section>
 
     <footer class="footer">
@@ -643,39 +729,51 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/index.js"></script>
     <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop:true,
-            nav:true,
-            autoplay:true,
-            rtl:true,
-            margin:10,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },            
-                960:{
-                    items:5
-                },
-                1200:{
-                    items:6
-                }
-            }
+      $(document).ready(function () {
+      const setCalculatedAnimationDuration = ($marqueeGroup, $el) => {
+        if ($marqueeGroup.outerWidth() > $el.outerWidth()) {
+          $marqueeGroup[0].style.animationDuration = "";
+    
+          const animationDuration = parseInt(
+            window
+              .getComputedStyle($marqueeGroup[0])
+              .getPropertyValue("animation-duration"),
+            10
+          );
+    
+          $el
+            .find(".marquee__group")
+            .css(
+              "animationDuration",
+              `${(
+                ($marqueeGroup.outerWidth() / $el.outerWidth()) *
+                animationDuration
+              ).toFixed(1)}s`
+            );
+        }
+      };
+    
+      $(".js-marquee").each((i, el) => {
+        const $el = $(el);
+        const $marqueeGroup = $el.find(".marquee__group");
+        const marqueeItemsCount = $marqueeGroup.children().length;
+    
+        while ($marqueeGroup.outerWidth() < $el.outerWidth()) {
+          for (let i = 0; i < marqueeItemsCount; i++) {
+            $marqueeGroup.append($marqueeGroup.children().eq(i).clone());
+          }
+        }
+    
+        $el.append($marqueeGroup.clone());
+        $el.addClass("initialized");
+    
+        $(window).on("load resize", () => {
+          setCalculatedAnimationDuration($marqueeGroup, $el);
         });
-        owl.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY>0) {
-                owl.trigger('next.owl');
-            } else {
-                owl.trigger('prev.owl');
-            }
-            e.preventDefault();
-        });
+      });
+    });
     </script>
   </body>
 </html>
