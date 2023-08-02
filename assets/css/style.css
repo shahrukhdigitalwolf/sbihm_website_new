@@ -14,12 +14,11 @@ body {
   color: #fff;
 }
 hr{
-    box-shadow: 0px 1px 2px #80808094;
     color: #6c757d75;
     opacity: 1;
 }
 hr:not([size]) {
-  height: 2px;
+  height: .2px;
 }
 .pad{
   padding: 30px 0 30px;
@@ -125,6 +124,18 @@ h6 {
   width: 100%;
   background: #fff;
   z-index: 999;
+}
+
+.dropdown-menu{
+  padding: 1rem 0px 0px 0;
+  margin: 0;
+  text-align: left;
+  background-color: #fffffff5;
+  border: none;
+  border-radius: 0.25rem;
+}
+.dropdown-item{
+  padding: 5px 5.5rem 5px 17px;
 }
 
 .header-three .second-header {
@@ -1228,16 +1239,6 @@ h6 span {
   margin-top: 15px;
   height: 350px;
 }
-.hotelNoteCard{
-  background-color: #dc3545;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.hotelNoteCard p{
-  color: #fff;
-}
 .bmx {
   height: auto !important;
 }
@@ -2228,4 +2229,28 @@ h6 span {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.sticky-btn1{
+  position: fixed;
+  top: 55%; 
+  left: -66px;
+  padding: 8px 20px;
+  background-color: #d9040a;
+  color: #fff;
+  border: 1px solid #b7b7b7;
+  transform: rotate(-90deg);
+  z-index: 1020;
+}
+@media (max-width:767px) {
+  .sticky-btn1{
+    display: none;
+  }
+}
+
+
+.htl-cs-dtals{
+  background: #2a2b38;
+  color: #ffffff;
+  padding: 13px;
 }
