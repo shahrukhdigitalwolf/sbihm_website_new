@@ -1844,7 +1844,7 @@ h6 span {
   z-index: -1;
 }
 .timeline{
-  background: url(../img/photos/l2.jpg);
+  background: url(../img/course/img9.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -1852,7 +1852,7 @@ h6 span {
 }
 .timeline::before{
   content: '';
-  background: #a9a9a9cf;
+  background: #a9a9a97e;
   position: absolute;
   top: 0;
   left: 0;
