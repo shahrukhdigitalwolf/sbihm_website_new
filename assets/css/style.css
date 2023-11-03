@@ -2280,3 +2280,125 @@ h6 span {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.course_page{
+  background: url(../img/banner/red_bg.png); 
+  background-size: cover; 
+  background-position: center center;
+}
+.course_heading{
+  position: relative;
+  line-height: .9;
+}
+.course_heading::after{
+  content: '';
+  background-color: #fff;
+  width: 250px;
+  height: 3px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.courseFormPage{
+  background: url(../img/banner/bgsg1.png);
+  background-size: cover;
+  background-position: center center;
+}
+.jsoptick{
+  background: url(../img/banner/bgsg2.png);
+  background-size: cover;
+  background-position: center center; 
+}
+.diploma_list ul{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+@media (max-width:767px){
+  .diploma_list ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.diploma_list ul li{
+  text-align: center;
+  font-weight: 800;
+  background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 82% 18% 44% 56% / 56% 24% 76% 44% ;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supercor{
+  background: linear-gradient(to right, #ffe9e578, #f2b0b582) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.backFront{
+  position: relative;
+}
+.c_front{
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+}
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  position: absolute;
+  right: 20px;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: -2px 4px 9px -3px black;
+  border: 1px solid #b1b1b1;
+}
+
+@media (max-width: 991px){
+  .btn-hover {
+    position: relative;
+    right: auto;
+  }
+}
+
+.form-control{
+  background-color: #ffffff1f;
+}
+.form-select{
+  background-color: #ffffff1f;
+}
