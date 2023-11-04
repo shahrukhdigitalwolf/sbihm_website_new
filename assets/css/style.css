@@ -815,7 +815,6 @@ h6 span {
 
 .recruiters_img img {
   max-width: 100%;
-  width: 155px
 }
 
 .home-blog_sec {
@@ -2401,4 +2400,84 @@ h6 span {
 }
 .form-select{
   background-color: #ffffff1f;
+}
+
+
+.notice-board h1{
+  position: relative;
+}
+.notice-board h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1.95px;
+    width: 70px;
+    background: #d9040a;
+}
+.cal_wrap{
+  display: flex;
+  gap: 5px;
+}
+.calender{
+  padding: 10px 5px 10px;
+}
+.cal-info{
+  padding: 0px 1px;
+  text-align: center;
+}
+.month{
+  width: 80px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 3px;
+  margin-bottom: 2px;
+  background: #d9040a;
+  color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.date{
+  padding: 4px 7px;
+  font-size: 34px;
+  font-weight: 600;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: -1px 3px 5px #d0d0d0;
+}
+
+.button3 {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.button3:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.notice-data{
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
