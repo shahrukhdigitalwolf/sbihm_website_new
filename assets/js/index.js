@@ -12,6 +12,3 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
-
-
-new WOW().init();
