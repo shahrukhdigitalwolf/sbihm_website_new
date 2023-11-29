@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subhash Bose IHM | Alumni</title>
+    <title>Subhash Bose IHM | Internship</title>
     <meta name="description" content="sbihm" />
     <script
       defer
@@ -37,55 +37,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-     <!-- Owl Carousel -->
-     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-     <link rel="stylesheet" href="./assets/css/owl.theme.green.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.green.css" />
+    <!-- Wow Animation Css -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Wow Animation Js -->
+    <script src="./assets/js/wow.min.js"></script>
+
     <style>
-        .owl-theme .owl-nav {
-          position: absolute;
-          top: -80px;
-          right: 100px;
+        :root {
+  --white: #fff;
+  --body-color: #232524;
+  --black: #000;
+  --background-color-card: rgba(0, 0, 0, 0.671);
+}
+        /* Section Timeline */
+        .timeline ul{
+          margin-bottom: 0;
+          padding-bottom: 20px;
         }
-        .owl-prev span {
-          background: #d9040a;
-          color: #fff;
-          padding: 12px 20px;
-          font-size: 22px;
-          border-radius: 8px;
-        }
-        .owl-next span {
-          background: #d9040a;
-          color: #fff;
-          padding: 12px 20px;
-          font-size: 22px;
-          border-radius: 8px;
-        }
-        @media screen and (max-width: 767px) {
-          .owl-theme .owl-nav {
-            position: relative;
-            top: 0;
-            right: 0;
-          }
-        }
-        .card{
-          box-shadow: -11px 9px 8px #bbb;
-          background-color: #d9040a;
-          border-radius: 10px;
-          overflow:hidden;
-        }
-        .carousel-indicators [data-bs-target]{
-          background-color: #d9040a;
-          margin-right: 6px;
-          margin-left: 6px;
-          width: 12px;
-          height: 11px;
-        }
-        .carousel-indicators{
-          bottom: -42px;
-        }
-      </style>
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  background-color: #481c00;
+  color: var(--white);
+  width: .5rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.timeline ul li:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 2rem;
+  height: 2rem;
+  background: inherit;
+  transform: rotate(45deg) translate(-71%);
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 20rem;
+  padding: 1rem;
+  background-color: var(--background-color-card);
+}
+
+.timeline ul li div time {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 1.8rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 3.5rem;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -1rem;
+  border-width: .7rem 1rem .7rem 0;
+  border-color: transparent var(--background-color-card) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -23rem;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -1rem;
+  border-width: .7rem 0 .7rem 1rem;
+  border-color: transparent transparent transparent var(--background-color-card);
+}
+
+.timeline ul li::after {
+  background: #3c312f;
+}
+ 
+.timeline ul li.is-visible::after {
+  background: var(--black);
+  transform: rotate(-315deg) translate(-71%);
+}
+ 
+.timeline ul li.is-visible div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 1.8rem;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 9rem);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 3.5rem;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -1rem;
+    border-width: .7rem 1rem .7rem 0;
+    border-color: transparent var(--background-color-card) transparent transparent;
+  }
+}
+    </style>
+
   </head>
   <body>
     <section class="header-area header-three" >
@@ -270,7 +344,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true" data-aos="fade-down" data-aos-duration="1300" data-aos-offset="100">Placement</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li>
-                        <a class="dropdown-item" href="our-partner.html">Our Partners</a>
+                        <a class="dropdown-item" href="organization.html">Organization</a>
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li>
@@ -278,7 +352,7 @@
                       </li>
                       <li><hr class="dropdown-divider"></li>
                       <li>
-                        <a class="dropdown-item" href="internship.html">Internship</a>
+                        <a class="dropdown-item" href="destination.html">Your Destination</a>
                       </li>
                     </ul>
                   </li>
@@ -363,6 +437,7 @@
                     <select name="course">
                       <option value="0">Course</option>
                       <option value="1">Hotal Management</option>
+                      
                     </select>
                   </div>
                   <div class="col-lg-12">
@@ -387,39 +462,128 @@
       Apply Now
     </button>
 
-      <section class="mt-5 mb-5" style="background: url(./assets/img/photos/homepage-background-vectors.png); background-position: center center; background-repeat: no-repeat;">
-        <h1 class="text-center mb-3">Alumni</h1>
-        <div class="container-fluid">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="testimonials_card" style="width: 100%">
-                <img src="./assets/img/testimonials/Dalim.png" alt="" />
-              </div>
+    <section class="pb-3 internship">
+        <div class="banner">
+            <h1 class="text-center">Internship</h1>
+        </div>
+        <img class="img-fluid ribon d-none d-lg-block" src="./assets/img/photos/homepage-background-vectors.png" alt="">
+      <div class="container">
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="./assets/img/course/hospitality1.jpg" alt="">
             </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 100%">
-                <img src="./assets/img/testimonials/Himashu.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 100%">
-                <img src="./assets/img/testimonials/PAyel.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 100%">
-                <img src="./assets/img/testimonials/prasenjeet.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials_card" style="width: 100%">
-                <img src="./assets/img/testimonials/Sagnik.png" alt="" />
-              </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column">
+            <div>
+              <h3>Hospitality</h3>
+              <p>
+                The Benefits of Hospitality Internship Programmes Hospitality
+                Internship are a great way to learn and gain practical work
+                experience for anyone who wants to pursue a career in the
+                Hospitality sector. Career Training Internships builds
+                partnerships with hotels and restaurants to provide hospitality
+                training internships to students from across the world who are
+                interested in building their careers in the hospitality sector.
+              </p>
+              <h3>Internship Opportunities - Hotel / Hospitality</h3>
+              <p>
+                Hospitality interns have the opportunity to travel and explore allover
+                the world as thehospitality industry seeks diversity in its employees
+                and looks for people from different backgrounds and cultures.
+                Hospitality internships often are the first opportunity for students
+                to gain work experience abroad; fortunately, for those seeking a
+                career in the industry, there will be endless opportunities to travel
+                and live abroad while further developing career.
+              </p>
             </div>
           </div>
         </div>
+
+       <div class="mt-3">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div>
+                    <h3>
+                        Most common internship positions in the Hotel / Hospitality management
+                        industry:
+                      </h3>
+                      <ul style="list-style-type: square;padding-left:25px ;">
+                          <li>Operations trainee</li>
+                          <li>Hotel management trainee</li>
+                          <li>Management trainee</li>
+                          <li>Marketing trainee</li>
+                          <li>Front desk receptionist trainee</li>
+                          <li>Human resources management trainee</li>
+                          <li>Admin executive trainee</li>
+                          <li>F&B trainee</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img class="img-fluid" src="./assets/img/course/hospitality2.jpg" alt="">
+            </div>
+        </div>
+        
+       </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+        <div class="p-4">
+            <h2 class="text-center text-white">Benefits of internships</h2>
+        </div>
+        <ul>
+          <li>
+            <div>
+              Gain experience within the hotel and hospitality business environment
+            </div>
+          </li>
+          <li>
+            <div>
+                Expand your skills and experience
+            </div>
+          </li>
+          <li>
+            <div>
+                Experience and learn from different operational styles
+            </div>
+          </li>
+          <li>
+            <div>
+                Grow your network of industry contacts
+            </div>
+          </li>
+          <li>
+            <div>
+                Gain invaluable experience for your resume
+            </div>
+          </li>
+          <li>
+            <div>
+                Engage you with current industry professionals
+            </div>
+          </li>
+          <li>
+            <div>
+                Build valuable industry and peer networks
+            </div>
+          </li>
+          <li>
+            <div>
+                Develop personal, professional and practical skills
+            </div>
+          </li>
+          <li>
+            <div>
+                Gain significant industry insights
+          </li>
+          <li>
+            <div>
+                Enhance your resume and strengthen your personal brand
+            </div>
+          </li>
+        </ul>
       </section>
-    
+
 
       <footer class="footer">
         <div class="container">
@@ -617,26 +781,8 @@
     </div>
 
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          dots: false,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-      </script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
