@@ -2559,3 +2559,13 @@ h6 span {
   z-index: -1;
   transform: skew(20deg , 00deg);
 }
+
+
+
+.text65vs{
+  font-weight: 600;
+}
+.ack-text25v{
+  font-size: 2.55vh;
+  font-weight: 600;
+}

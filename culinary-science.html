@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subhash Bose IHM | payment</title>
-  <meta name="description" content="sbihm" />
+  <title>Subhash Bose IHM | Course - Page</title>
+  <meta name="description" content="sbihm">
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
@@ -21,41 +21,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <!-- Bootstrap Css -->
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-  <!-- Wow Animation Css -->
-  <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.green.css" />
   <!-- Custom Css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- Wow Animation Js -->
-  <script src="./assets/js/wow.min.js"></script>
 
-  <style>
-    .accordion-button {
-      background-color: #e07768;
-      color: #fff;
-      font-size: 23px;
-      padding: 80px 20px;
-      justify-content: center;
-      BOX-SHADOW: 0 0 47PX #d43d17 inset;
-    }
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    .accordion-button::after {
-      display: none;
-    }
-
-    .accordion-body {
-      box-shadow: 0 0 10px #e7e7e7;
-    }
-
-    .accordion-button:not(.collapsed) {
-      color: #fff;
-      background-color: #e07768;
-    }
-
-    .accordion-button:focus {
-      BORDER: 3PX SOLID #125875b5;
-      BOX-SHADOW: 0 0 47PX #d43d17 inset;
-    }
-  </style>
 </head>
 
 <body>
@@ -274,238 +248,243 @@
     </header>
   </section>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Admission Open</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="popup_contact_form">
-            <form action="#">
-              <div class="row gy-3">
-                <div class="col-lg-12">
-                  <input type="text" name="name" placeholder="Full Name" />
-                </div>
-                <div class="col-lg-12">
-                  <input type="email" name="email" placeholder="Your Email" />
-                </div>
-                <div class="col-lg-12">
-                  <input type="tel" name="phone" placeholder="Phone Number" />
-                </div>
-                <div class="col-lg-12">
-                  <select name="course">
-                    <option value="0">Course</option>
-                    <option value="1">Hotal Management</option>
-                    
-                  </select>
-                </div>
-                <div class="col-lg-12">
-                  <textarea name="message" placeholder="Any Queries" rows="3"></textarea>
-                </div>
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <button type="submit" class="btn">Apply Now</button>
-                </div>
-              </div>
-            </form>
+  <div class="mb-5" id="bachelor">
+    <section class="course_page pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center flex-column order-2 order-lg-1">
+            <div class=" text-white" style="padding:10px 9px 25px;">
+              <h4>Bachelor of</h4>
+              <h1 class="display-2 course_heading">Culinary Science</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <button class="sticky-btn1 ms-4 mb-3 mt-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Apply Now
-  </button>
-
-  <section class="hero-banner">
-    <div class="container">
-      <div class="hero-banner-title">
-        <h1 class="wow animate__animated animate__fadeInDown">
-          Payment Information
-        </h1>
-      </div>
-      <nav class="breadcrumb wow animate__animated animate__fadeInUp">
-        <a class="breadcrumb-item" href="index.html">Home</a>
-        <span class="breadcrumb-item active" aria-current="page">Payment</span>
-      </nav>
-    </div>
-  </section>
-
-  <!-- <section class="payment-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                  <div class="container">
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <div class="icon">
-                                    <h2>Application Kit</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <h3>Amount</h3>
-                                <p class="mb-3">₹600</p>
-                                <button class="btn d-block m-auto">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3">
-                     <div class="container">
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <div class="icon">
-                                    <h2>Seat Booking</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                          <div class="content">
-                            <h3>Amount</h3>
-                            <p class="mb-3">₹1000</p>
-                            <button class="btn d-block m-auto">Book Now</button>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="container">
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <div class="icon">
-                                    <h2>Course Registration</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                          <div class="content">
-                            <h3>Amount</h3>
-                            <p class="mb-3">₹24000</p>
-                            <button class="btn d-block m-auto">Book Now</button>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="container">
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="content">
-                                <div class="icon">
-                                    <h2>Admission Fees</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <h3>Amount</h3>
-                                <p class="mb-3">₹68000</p>
-                                <a href="https://payments.cashfree.com/forms/admissionfeeshotel">
-                                   <button class="btn d-block m-auto">Book Now</button>
-                                </a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+    <section class="pt-3 pb-3" style="overflow: hidden;">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="pb-3">
+              <h2>What is the course all about Bachelor of Culinary Science?</h2>
+              <p>
+                Culinary Science is a program, that combining Culinary skills and food science in an appropriate manner to achieve desired product(Dishes). Science is an indispensable and constant application in culinary process. Food science emphases solely on the biochemistry while culinary science concentrates both culinary arts and nutriment science.
+              </p>
             </div>
+            <div>
+              <h2>Subjects</h2>
+              <p>
+                Students here gets to go through main subject which is Food and Beverage Production in depth,
+              </p>
+            </div>
+            <div>
+                <ul>
+                    <li class="parent2">Basics of Food & Beverage Production</li>
+                    <li class="parent2">Food Production Operation</li>
+                    <li class="parent2">Contemporary Asian and World Cuisine & Baking Skills</li>
+                    <li class="parent2">Charcuterie and Intermediate Bakery</li>
+                    <li class="parent2">Advanced Food Production</li>
+                    <li class="parent2">Indian Regional Cuisine</li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column order-1 order-lg-2">
+            <div>
+                <img src="./assets/img/course/chef2.jpg" alt="" width="100%" height="100%">
+            </div>
+          </div>
         </div>
-    </section> -->
+      </div>
+    </section>
 
-  <section class="pt-4 pb-4">
-    <div class="container">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
+    <section class="pt-3 pb-3 supercor">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-6">
+            <img src="./assets/img/course/basicfoodProduction.jpg" class="img-fluid" alt="hj" style="display: block; margin: auto;">
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column">
+            <div>
+              <p>
+                however, there are quite a few supplementary subjects are important to read simultaneously those help to enhance their knowledge in practical application in their day to day work. Those subjects are –
+              </p>
+            </div>
+            <div>
+              <ul style="list-style-type: circle; padding-left: 25px; font-weight: 600;">
+                <li>Menu Functions and Material Management</li>
+                <li>Institutional and Industrial Catering</li>
+                <li>Food and Wine Philosophy</li>
+                <li>Environmental Science</li>
+                <li>Principles of Food Legislation and Food Cost Controls</li>
+                <li>Kitchen Facility Planning</li>
+                <li>Food costing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-3 pb-3 jsoptick">
+      <div class="container">
+
+        <div class="row mb-3 gy-3">
+          <div class="col-lg-6 d-flex justify-content-center flex-column order-lg-1 order-2">
+            <div>
+              <h2>Job Portfolio</h2>
+              <p>
+                The person once gets through in any organization in the beginning he or she has to go through many scheduled trainings and then gets familiarized with the dept. as per scheduled made by Hotel Training Dept. Secondly the Job portfolio varies Hotel to Hotel and Organization to Organization. A student can join as a MT Level staff or Entry Label, based on their performance and accordingly the Portfolio varies too. In short MT Level staff is groomed putting in various Dept. for certain tenure for 3-6 months to learn the operation of each and every sections of that particular Dept. and then with a span of 2-3 yrs. based on performance will be Assistant Manager. For others as an Entry Level, they are chosen for particular section to learn and execution, however they can apply for MT Program too.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1">
+            <img class="img-fluid" src="./assets/img/course/chef1.jpg" alt="op">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-3 pb-3" style="background-color: tomato;">
+      <div class="container">
+
+        <div class="row mb-3 gy-3">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="./assets/img/course/1.jpg" alt="">
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column">
+            <div>
+              <div>
+                <h2 class="text-white">Job sector</h2>
+                <p class="text-white">In this case now a days there are many sectors are existing for the Aspirants such as-(Apart from Hotel or Restaurant sector)</p>
+              </div>
+              <div>
+                <ul class="text-white" style="list-style-type: circle; padding-left: 25px; font-weight: 500;">
+                  <li>Cruise Line and Flotel – Passenger and Cargo</li>
+                  <li>FMCG Companies</li>
+                  <li>Airport and Mall</li>
+                  <li>MNC and Native Conglomerate Mall or Departmental store – Walmart, Metro Cash & Carry, Spencer, Big Bazar etc.</li>
+                  <li>Airlines and Rail</li>
+                  <li>University – Large Canteen and Satellite Kitchen</li>
+                  <li>Live TV Cooking show</li>
+                  <li>Leisure and Entertainment Centre</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5 pt-5">
+      <div class="container">
+        <div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Application Kit
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Career
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text-center">
-                  <h3>Amount</h3>
-                  <p class="mb-3">₹600</p>
-                  <a href="https://payments.cashfree.com/forms/applicationkithotel">
-                    <button class="btn d-block m-auto">Book Now</button>
-                  </a>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  The food and beverage industry is one of the fastest growing industries in the world, with growth outpacing the economy. While every aspirant might think of jobs such as chef to extreme Executive chef to Operation Manager till General Manager of an unit. There are in fact many more roles within this dynamic industry. This profession is ideal for the aspirants who wish to work in food and beverage industry or kitchen management or hotel and hospitality management. The professional is usually known as the culinarian, or chefs.
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Provitional Admission
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Internship
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text-center">
-                  <h3>Amount</h3>
-                  <p class="mb-3">₹10000</p>
-                  <a href="https://payments.cashfree.com/forms/seatbookinghotel">
-                    <button class="btn d-block m-auto">Book Now</button>
-                  </a>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Students need to go through 22-24 weeks of Internship program to any 5-star or 5 star Upper scale Hotel to know the operation thoroughly in various sections to have a in depth knowledge about the food and practical operation.
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Course Registration
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text-center">
-                  <h3>Amount</h3>
-                  <p class="mb-3">₹24000</p>
-                  <a href="https://payments.cashfree.com/forms/courseregistrationhotel">
-                    <button class="btn d-block m-auto">Book Now</button>
-                  </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-3 pb-3" id="master">
+      <div class="container">
+        <div class="p-4 rounded" style="background-color: #283744; color: white; position: relative;">
+          <form action="#">
+            <div class="row gx-2">
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="" class="form-label">Name</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
                 </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="" class="form-label">Phone</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="" class="form-label">Course</label>
+                  <select class="form-select" name="" id="">
+                    <option value="0">Select Course</option>
+                    <option value="1">Bachelor in Hotal Management</option>
+                    <option value="1">Master’s in Hotal Management</option>
+                    <option value="1">MBA in Hotal Management</option>
+                    <option value="1">PGDM in Hotal Management</option>
+                    <option value="1">Diploma in Hotal Management</option>
+                    <option value="1">Certificate in Hotal Management</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12 d-flex justify-content-lg-end justify-content-center">
+                <div>
+                  <button class="btn-hover color-8">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="subscribe-form" style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-1 d-flex justify-content-center flex-column" data-aos="fade-right"
+              data-aos-duration="1000" data-aos-offset="200">
+              <div>
+                <img src="./assets/icons/send-mail.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-8" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+              <div class="subscribe-form_title">
+                <h2>ADMISSION OPEN FOR 2024 BATCH</h2>
+                <p>The bachelor, Master, PGDM and Diploma programme is open to students who have successfully completed / appear their 10+2, 10th, Graduation in any stream.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  Admission Fees
-                </button>
-              </h2>
-              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text-center">
-                  <h3>Amount</h3>
-                  <p class="mb-3">₹68000</p>
-                  <a href="https://payments.cashfree.com/forms/admissionfeeshotel">
-                    <button class="btn d-block m-auto">Book Now</button>
-                  </a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center flex-column" data-aos="fade-left" data-aos-duration="1000"
+          data-aos-offset="200">
+          <div class="mini_contact">
+            <form action="#">
+              <input type="tel" name="phone" placeholder="Phone Number..." />
+              <button class="btn-button">Send Queries</button>
+            </form>
           </div>
         </div>
       </div>
@@ -521,8 +500,10 @@
           </div>
           <div>
             <p>
-              Subhash Bose IHM is all about experiential learning and building an ever-expanding knowledge base involving knowledge
-              partners and communities. Subhash Bose IHM is where information and ideas flow freely in an open and friendly
+              Subhash Bose IHM is all about experiential learning and building an ever-expanding knowledge base
+              involving knowledge
+              partners and communities. Subhash Bose IHM is where information and ideas flow freely in an open and
+              friendly
               atmosphere – a “Knowledge Hub of Global Excellence” in which students learn, share, shine and have fun.
             </p>
           </div>
@@ -622,14 +603,9 @@
           </div>
           <div class="map">
             <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.730191269259!2d88.47223895414565!3d22.58919234961071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027549e2fd7c5b%3A0xd143236c8c560e1f!2sSUBHAS%20BOSE%20INSTITUTE%20OF%20HOTEL%20MANAGEMENT!5e0!3m2!1sen!2sin!4v1691064263993!5m2!1sen!2sin"
-                  width="100%"
-                  height="220"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.730191269259!2d88.47223895414565!3d22.58919234961071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027549e2fd7c5b%3A0xd143236c8c560e1f!2sSUBHAS%20BOSE%20INSTITUTE%20OF%20HOTEL%20MANAGEMENT!5e0!3m2!1sen!2sin!4v1691064263993!5m2!1sen!2sin"
+              width="100%" height="220" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -669,24 +645,57 @@
   <div class="sticky_footer_btn">
     <div class="phone">
       <a href="#">
-        <img src="./assets/icons/phone-call.png" alt="" width="20%" />
+        <img src="./assets/icons/phone-call.png" alt="" width="20%">
       </a>
     </div>
     <div class="whatsapp">
       <a href="#">
-        <img src="./assets/icons/whatsapp.png" alt="" width="20%" />
+        <img src="./assets/icons/whatsapp.png" alt="" width="20%">
       </a>
     </div>
     <div class="apply-now">
-      <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Apply Now
-      </button>
+      <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
     </div>
   </div>
 
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/index.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 3,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    $('#site-navigation').affix({
+      offset: {
+        top: $(window).height() * .75
+      }
+    }); 
+  </script>
+
 </body>
 
 </html>
