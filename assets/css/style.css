@@ -116,6 +116,8 @@ h6 {
 
 #myHeader {
   box-shadow: 0 0 6px;
+  border-bottom: 1px solid #c3c3c3;
+  background-color: #f9f9f9;
 }
 
 .sticky {
